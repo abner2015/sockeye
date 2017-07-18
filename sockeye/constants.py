@@ -88,6 +88,10 @@ SOFTMAX_OUTPUT_NAME = SOFTMAX_NAME + "_output"
 
 MEASURE_SPEED_EVERY = 50  # measure speed and metrics every X batches
 
+# Monitor constants
+STAT_FUNC_NORM = "norm"  # default MXNet monitor stat func: |x|/size(x)
+MONITOR_STAT_FUNCS = {STAT_FUNC_NORM: None}
+
 DEFAULT_BEAM_SIZE = 5
 
 VERSION_NAME = "version"
